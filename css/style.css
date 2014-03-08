@@ -1,0 +1,111 @@
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+
+/*@font-face {
+	font-family: smiley_font;
+	src: url('fonts/Smiley.ttf');
+}*/
+@font-face {
+  font-family: 'Smiley';
+  font-style:  normal;
+  font-weight: 400;
+  src: url('fonts/Smiley.ttf');
+}
+
+
+@font-face{
+	font-family: daniela_font;
+	src: url('fonts/Daniela.ttf');
+}
+
+
+
+#myCanvas {
+	padding-left: -10px;
+	padding-right: -30px;
+	cursor:url(../img/cursor_0.cur), auto;
+	border: dashed 2px;
+}
+
+.header {
+	border-bottom: solid 2px #e5e5e5;
+	margin-bottom: 30px;
+	margin-left: 100px;
+	margin-right: 10px;
+	max-width: 670px;
+	/*text-align: center;*/
+}
+.header h1{
+	
+	font-size: 4em;
+	font-family: Perpetua;
+	text-align: center;
+}
+.container {
+	max-width: 1300px;
+	/*text-align: center;*/
+}
+#canvasDiv{
+	max-width: 600;
+	/*margin-left: 140px;*/
+	padding: -5px;
+	height: 380px;
+
+}
+
+footer {
+	text-align: center;
+	margin-right: 200px;
+
+}
+
+#myMenu {
+	margin-top: 0px;
+	margin-left: 7px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+#myMenu button{
+	margin-bottom: 8px;
+	margin-left: 13px;
+	width: 70%;
+}
+#canvasImgModal {
+	padding-top: 0px;
+	padding-bottom: 0px;
+
+}
+
+#canvasImg {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	width: 100%;
+}
+
+#modalFooter {
+	margin-top: 0px;
+}
+
+#modalFooter button {
+	margin-right: 80px;
+}
+
+#myModalLabel {
+	font-size: 5em;
+	font-family: Perpetua;
+	text-align: center;
+}
+
+#modalFooter h4 {
+	font-size: 3em;
+	font-family: Perpetua;
+	text-align: center;
+}
+
+a.default { 
+	color: #fff;
+}

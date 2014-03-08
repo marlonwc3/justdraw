@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="My first contact with canvas.">
+  <meta name="keywords" content="draw, image, canvas, just draw, just">
+  <meta name="author" content="Marlon Reghert">
+  <meta charset="UTF-8">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" type="text/css" href="dist/css/bootstrap.css">
+      <link rel="stylesheet" type="text/css" href="dist/css/bootstrap-theme.min.css">
+      <script type="text/javascript" src="js/jquery.min.js"></script>
+      <script type="text/javascript" src="dist/js/bootstrap.min.js"></script>
+
+      <title>Just Draw</title>
+  </head>
+  <body>
+
+    <div class="container" >
+      <div class="header">
+        <h1> Just draw <small id="logo"></small> <img src="img/baloons.png" style="width:15%;"></h1>
+      </div>
+        <div class="row">
+          <div class="col-xs-8 col-md-7 col-md-offset-1" id="canvasDiv" >
+            <canvas id="myCanvas"> </canvas>
+          </div>
+          <div class="col-md-2 col-xs-3" id="myMenu">
+           
+              <button id="0" onclick="pencil(this.id);" class="btn btn-default btn-sm btn-block" style="color: black;">Black 
+                <span class="glyphicon glyphicon-pencil"></span>
+              </button>
+              <button id="1" onclick="pencil(this.id);" class="btn btn-default btn-sm btn-block" style="color: red;" >Red 
+                <span class="glyphicon glyphicon-pencil"></span>
+              </button>
+              <button id="2" onclick="pencil(this.id);" class="btn btn-default btn-sm btn-block" style="color: blue;">Blue 
+                <span class="glyphicon glyphicon-pencil" ></span>
+              </button>
+              <button id="3" onclick="pencil(this.id);" class="btn btn-default btn-sm btn-block" style="color: yellow;">Yellow 
+                <span class="glyphicon glyphicon-pencil" ></span>
+              </button>
+              <button id="4" onclick="pencil(this.id);" class="btn btn-default btn-sm btn-block" style="color: green;">Green 
+                <span class="glyphicon glyphicon-pencil"></span>
+              </button>
+              <button id="5" onclick="pencil(this.id);" class="btn btn-default btn-sm btn-block" style="color: orange;">Orange
+               <span class="glyphicon glyphicon-pencil"></span>
+             </button>
+              <button id="6" onclick="pencil(this.id);" class="btn btn-default btn-sm btn-block" style="color: brown;">Brown 
+                <span class="glyphicon glyphicon-pencil"></span>
+              </button>
+              <button id="erase" onclick="er=true" class="btn btn-default btn-sm btn-block">Erase 
+                <span class="glyphicon glyphicon-tags"></span>
+              </button>
+              <button id="clear" class="btn btn-default btn-sm btn-block">Clear 
+                <span class="glyphicon glyphicon-trash"></span>
+              </button>
+
+
+              <button id="saveImg" class="btn btn-default btn-sm btn-block" data-toggle="modal" data-target="#myModal">Save 
+                <span class="glyphicon glyphicon-file"></span>
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h2 class="modal-title" id="myModalLabel">Beautiful job!</h2>
+                    </div>
+                    <div class="modal-body" id="canvasImgModal">
+                       <a href="" id="imgDownload" download > <img src="" alt="Your draw" id="canvasImg" class="thumbnail" title="Save your job (:"> </a>
+                    </div>
+                    <div class="modal-footer" id="modalFooter">
+                      <h4 class="modal-title" id="myModalLabel">Click on image to save</h4>
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Back to draw</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        
+      </div>
+      <footer id="info"> <a href="https://www.facebook.com/marlon.regherth" title="My Facebook">mras@cin.ufpe.br</a> </footer>
+    </div>
+
+
+    <script type="text/javascript" src="js/draw.js"></script> <!-- Draw script -->      
+  </body>
+</html>
